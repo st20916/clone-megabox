@@ -1,0 +1,253 @@
+@charset "UTF-8";
+@import url("./font.css");
+
+/**
+*   전역 css
+*
+*   @author     jjlee
+*   @data       2024.04.19
+*/
+
+:root {
+    --nav-color: #2c3e50;
+    --link-color: #42b983;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', 'Pretendard', 'Apple SD Gothic Neo', '맑은 고딕', 'Malgun Gothic', '돋움', 'Dotum', '굴림', 'Gulim', 'AppleGothic, Sans-serif';
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5625;
+    color: #333;
+    -webkit-print-color-adjust: exact;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    word-break: break-all;
+}
+
+header,
+footer,
+main,
+section,
+article,
+nav,
+aside {
+    display: block;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+hr {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+input,
+select {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+input,
+select,
+button,
+textarea,
+optgroup {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+address,
+em,
+i {
+    font-style: normal;
+}
+
+strong {
+    font-weight: 600;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    padding: 0;
+    border: 0 none;
+    background: none;
+    cursor: pointer;
+}
+
+input[type='submit'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    font-size: 1.5rem;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #DBDBDB;
+    vertical-align: top;
+    height: 4rem;
+    padding: .6rem 1.2rem;
+}
+
+img {
+    max-width: 100%;
+    border: 0 none;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+img.small {
+    max-width: 20px;
+}
+
+input[type="text"]:focus-visible,
+input[type="password"]:focus-visible,
+select:focus-visible {
+    outline:0;
+    border:1px solid #155CD6;
+}
+
+*::placeholder {
+    opacity:.5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption,
+legend,
+.sr_only,
+.hidden,
+.blind,
+.IR {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0 none;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* common */
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.tiny-scroll::-webkit-scrollbar {
+    width: .825rem;
+    height: .825rem;
+}
+
+.tiny-scroll::-webkit-scrollbar-thumb {
+    background:#ACACAC;
+    border-radius: .3rem;
+}
+
+.tiny-scroll::-webkit-scrollbar-track {
+    width: 13px;
+    height: 13px;
+}
+
+.vertical-align-baseline {
+    vertical-align: baseline;
+}
+
+.vertical-align-sub {
+    vertical-align: sub;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+.block-min-height {
+    min-height: 250px;
+    z-index: 5;
+}
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 8px;
+    }
+}
