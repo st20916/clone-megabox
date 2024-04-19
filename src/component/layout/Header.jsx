@@ -15,7 +15,7 @@ const Header = () => {
                 <nav id='gnb'>
                     <ul id='head_menu'>
                         <li>
-                            <Link to='/' title='영화'>영화</Link>
+                            <Link to='/movie' title='영화'>영화</Link>
                         </li>
                         <li>
                             <Link to='/' title='예매'>예매</Link>

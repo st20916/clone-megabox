@@ -9,6 +9,7 @@
 }
 
 #header .header_wrap {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -61,4 +62,21 @@
     padding: 0 2.5rem;
     font-weight: 500;
     color: #ffffff;
+}
+
+@media (max-width: 1023px) {
+    #gnb > ul {
+        position: relative;
+        display: none;
+        float: none;
+        width: 100%;
+        margin-top: 6rem;
+        background-color: #ffffff;
+    }
+}
+
+@media (max-width: 650px) {
+    #header .header_wrap {
+        padding-top: 2rem;
+    }
 }

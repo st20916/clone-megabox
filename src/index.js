@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/base.css';                                                         // Base CSS import
+
+import './styles/base.css';              // Base CSS import
+import './styles/main.css';              // Import Main CSS
+import './styles/layout/sub.css';        // Import Sub CSS
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
