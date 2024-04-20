@@ -7,3 +7,130 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.section01 {
+    position: relative;
+}
+
+.section01::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/bg/section_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+.section01::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 1, 21, .7);
+}
+
+.section01 .main_wrap {
+    z-index: 1;
+}
+
+.cont_area {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10rem;
+}
+
+.cont_area .area_tit {
+    margin: 6rem 0 3rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* section movie list */
+.movie_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+}
+
+.movie_list > .li_boxRank img {
+    display: block;
+    width: 100%;
+    height: 35rem;
+    border-radius: 5px;
+}
+
+.movie_list > .li_boxRank .list_btns {
+    position: relative;
+    margin-top: 1rem;
+}
+
+/* btn */
+.btn {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 10.8rem;
+    height: 4rem;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    background-color: #000000;
+    border: 1px solid #000000;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    transition: .25s;
+    -webkit-transition: .25s;
+}
+
+.btn_line3 {
+    display: inline-block;
+    min-width: 8rem;
+    height: 3rem;
+    line-height: 2rem;
+    margin-right: .5rem;
+    padding: 0 .5rem;
+    background-color: rgba(0, 0, 0, .4);
+    border: 1px solid #555555;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: .25s;
+    -webkit-transition: .25s;
+}
+
+.btn_line3:hover,
+.btn_line3:focus {
+    background-color: #ffffff;
+    color: #555555;
+}
+
+.btn_line3 span[class*='ri-'] {
+    display: inline-block;
+    margin-right: .5rem;
+}
+
+.btn_style02 {
+    display: inline-block;
+    min-width: calc(100% - 8.5rem);
+    height: 3rem;
+    line-height: 2rem;
+    padding: 0 .5rem;
+    background-color: #037b94;
+    border: 0;
+    border-radius: .4rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ffffff;
+    transition: .25s;
+    -webkit-transition: .25s;
+}

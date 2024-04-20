@@ -1,18 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+import { Provider } from "react-redux";
+import store from './reducer/store';     // Import Redux 사용하기 위한 Store
+
 import './styles/base.css';              // Base CSS import
 import './styles/main.css';              // Import Main CSS
 import './styles/layout/sub.css';        // Import Sub CSS
 
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
