@@ -1,5 +1,6 @@
 import React from 'react';
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Main = () => {
     // Redux Store를 사용하여 영화 목록 호출
@@ -38,7 +39,13 @@ const Main = () => {
                     <div className='movie_list'>
                         {randomMovies.map(movie => (
                             <div className='li_boxRank' key={movie.id}>
-                                <img src={movie.imagePath} alt={movie.name} />
+                                {/* 상세보기 화면으로 이동 시, QueryString 아래와 같이 사용  */}
+                                <Link to={{
+                                    pathname: '/movieDetail',
+                                    search: `?seq=${movie.id}`
+                                }} className='movie_detail'>
+                                    <img src={movie.imagePath} alt={movie.name} />
+                                </Link>
                                 <div className='list_btns'>
                                     <button type='button' className='btn_line3'>
                                         <span className='ri-heart-line'></span>

@@ -6,6 +6,7 @@ import Header from './component/layout/Header';                         // impor
 import Main from './component/Main';                                    // import Main 컴포넌트
 import Footer from './component/layout/Footer';                         // import Footer 컴포넌트
 import Sitemap from "./component/sitemap/Sitemap";                      // import Sitemap 컴포넌트
+import MovieDetail from "./component/movie/MovieDetail";                // import Movie Detail 컴포넌트
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Routes>
                 <Route path='/' element={<Main />}></Route>                       {/* Main */}
                 <Route path='/sitemap' element={<Sitemap />}></Route>             {/* Sitemap */}
+                <Route path="/movieDetail" element={<MovieDetail />}/>            {/* Movie Detail */}
             </Routes>
             <Footer />
         </BrowserRouter>

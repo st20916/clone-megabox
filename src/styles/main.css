@@ -73,6 +73,10 @@
     margin-top: 1rem;
 }
 
+.movie_detail {
+    position: relative;
+}
+
 /* btn */
 .btn {
     position: relative;
