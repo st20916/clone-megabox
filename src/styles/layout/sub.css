@@ -144,6 +144,241 @@
     border-radius: 1rem;
 }
 
+/* 주요 정보 */
+.movie_summary {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    color: #222222;
+}
+
+.movie_summary p {
+    text-align: left;
+    line-height: 2;
+    word-break: keep-all;
+}
+
+.movie_summary + .movie_info {
+    border-top: 1px solid #EAEAEA;
+}
+
+.movie_info {
+    padding: 5rem 0;
+    color: #222222;
+}
+
+/* tab */
+.tab_list {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.tab_list::before {
+    content: '';
+    display: table;
+}
+
+.tab_list > ul {
+    position: relative;
+    width: 100%;
+    height: 4.2rem;
+    overflow: hidden;
+}
+
+.tab_list > ul > li {
+    float: left;
+    height: 4.2rem;
+    margin: 0;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #EBEBEB;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #222222;
+    line-height: 4.1rem;
+}
+
+.tab_list > ul > li:hover {
+    cursor: pointer;
+}
+
+.tab_list > ul > li:last-child {
+    border-right: 1px solid #EBEBEB;
+}
+
+.tab_list > ul > li.on {
+    border: 1px solid #503396;
+    border-bottom: 0;
+    color: #503396;
+}
+
+.tab_list > ul > li.on ~ li {
+    border-left: 0;
+    border-bottom-color: #503396;
+}
+
+.tab_list > ul >li:first-child:nth-last-child(2),
+.tab_list > ul >li:first-child:nth-last-child(2) ~ li {
+    width: 50%;
+}
+
+/* table */
+.con_table table {
+    border-top: 1px solid #707070;
+    letter-spacing: -.016rem;
+}
+
+.con_table tr {
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.con_table tr th {
+    padding: 1rem 2rem;
+    background-color: #F8F9FB;
+    font-weight: 600;
+    text-align: start;
+    word-break: keep-all;
+}
+
+.con_table tr td {
+    height: 5rem;
+    padding: .5rem 2rem;
+    color: #767676;
+    word-break: break-word;
+    text-align: left;
+}
+
+/* graph */
+.movie_graph .col {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #EAEAEA;
+}
+
+.movie_graph .col .col_tit {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #555555;
+    text-align: center;
+}
+
+.movie_graph .col .graph p {
+    font-size: 3.3rem;
+    font-weight: 600;
+    color: #503396;
+}
+
+/* review */
+.movie_idv_story {
+    position: relative;
+    display: block;
+    min-height: 50rem;
+    margin-top: 4rem;
+}
+
+.story_area {
+    position: relative;
+    display: flex;
+    align-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.story_area .user_prof {
+    position: relative;
+    width: 10.5rem;
+    text-align: center;
+}
+
+.story_area .user_id {
+    width: 10.5rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    color: #444444;
+}
+
+.story_area .story_wrap {
+    position: relative;
+    width: calc(100% - 11.5rem);
+}
+
+.story_area .story_wrap input {
+    width: calc(100% - 10.8rem);
+    height: 100%;
+}
+
+.story_area .story_wrap .btn {
+    height: 100%;
+}
+
+.movie_idv_story .under_title {
+    margin: 3rem 0 1.5rem;
+    color: #222222;
+    text-align: left;
+}
+
+.movie_idv_story .under_title small {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #01738b;
+}
+
+.review_area > ul {
+    width: 100%;
+}
+
+.review_area > ul > li {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.review_area > ul > li .user_prof {
+    position: relative;
+    width: 10.5rem;
+    text-align: center;
+}
+
+.review_area > ul > li .profile {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 1rem;
+    background-color: #EBEBEB;
+    border-radius: 100%;
+    font-size: 2.5rem;
+    line-height: 5.1rem;
+    color: #ffffff;
+}
+
+.review_area > ul > li p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 12.5rem);
+    padding: 20px;
+    background-color: #f8f8fa;
+    border-radius: 0 10px 10px 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #666666;
+}
+
+.review_area > ul > li .user_id {
+    width: 10.5rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    color: #444444;
+}
+
+.review_area > ul > li + li {
+    margin-top: 2rem;
+}
+
 @media (max-width: 650px) {
     .sitemap > ul {
         width: 100%;
