@@ -313,7 +313,7 @@
 }
 
 .movie_idv_story .under_title {
-    margin: 3rem 0 1.5rem;
+    margin: 6rem 0 1.5rem;
     color: #222222;
     text-align: left;
 }
@@ -322,6 +322,14 @@
     font-size: 1.5rem;
     font-weight: 700;
     color: #01738b;
+}
+
+.review_area .no {
+    padding: 3rem 0;
+    border-top: 1px solid #503396;
+    border-bottom: 1px solid #503396;
+    font-size: 2rem;
+    color: #444444;
 }
 
 .review_area > ul {

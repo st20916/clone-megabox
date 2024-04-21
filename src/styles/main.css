@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+/* */
+.title01 {
+    padding-top: 50px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #351f66;
+    text-align: left;
+}
+
+/* */
 .main_wrap {
     position: relative;
     width: 128rem;
@@ -137,4 +147,20 @@
     color: #ffffff;
     transition: .25s;
     -webkit-transition: .25s;
+}
+
+.main_benefit,
+.main_quration {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 10rem;
+}
+
+.main_quration {
+    min-height: 84rem;
+    background-color: #252451;
+}
+
+.main_quration .title01 {
+    color: #ffffff;
 }

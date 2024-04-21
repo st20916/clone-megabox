@@ -51,17 +51,21 @@ const MovieReview = () => {
                 <h4 className='under_title'>전체 (총 <small>{reviews.length}</small>건)</h4>
                 {/* 리뷰 List */}
                 <div className='review_area'>
-                    <ul className='list'>
-                        {reviews.map((review, index) => (
-                            <li key={index}>
-                                <div className='user_prof'>
-                                    <span className='profile'><i className='ri-user-3-line'></i></span>
-                                    <strong className='user_id'>사용자(user{index + 1})</strong>
-                                </div>
-                                <p>{review}</p>
-                            </li>
-                        ))}
-                    </ul>
+                    {reviews.length === 0 ? (
+                        <p className='no'>등록 된 리뷰가 없습니다.</p>
+                        ) : (
+                        <ul className='list'>
+                            {reviews.map((review, index) => (
+                                <li key={index}>
+                                    <div className='user_prof'>
+                                        <span className='profile'><i className='ri-user-3-line'></i></span>
+                                        <strong className='user_id'>사용자(user{index + 1})</strong>
+                                    </div>
+                                    <p>{review}</p>
+                                </li>
+                            ))}
+                        </ul>
+                    )}
                 </div>
             </div>
         </>
